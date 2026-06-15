@@ -117,7 +117,7 @@ function renderCards(list) {
       </div>
       <div class="card-body">
         <div class="card-meta">
-          <span>🍽 Serves ${r.servings}</span>
+		  <span>🍽 Serves ${r.servings ?? 'Not Provided'}</span>
           ${r.temps ? `<span>🌡 ${r.temps}</span>` : ''}
         </div>
         <div class="card-preview">${getPreview(r)}</div>
@@ -144,7 +144,7 @@ function setFilter(cat, btn) {
   filterRecipes();
 }
 
-function scaleAmount(amountStr, base, current) {
+function scaleAmountOriginal(amountStr, base, current) {
   // Try to scale numeric amounts
   const match = amountStr.match(/^([\d.\/½¼¾⅓⅔]+)\s*(.*)/);
   if (!match) return amountStr;
@@ -162,20 +162,84 @@ function scaleAmount(amountStr, base, current) {
   return `${display} ${unit}`.trim();
 }
 
+function scaleAmountSimple(amount, base, current) {
+  // 1. Try to extract the number from the start of the string
+  const val = parseFloat(amount);
+  
+  // 2. If it's not a number, return the original string immediately
+  if (isNaN(val)) return amount;
+  
+  // 3. Otherwise, do the math and keep the unit (like 'lb') if it exists
+  const scaled = val * (current / base);
+  return amount.replace(val, scaled); 
+}
+
+function scaleAmount(amountStr, base, current) {
+  // 1. Try to scale numeric amounts
+  // Regex: look for a number/fraction at the start
+  const match = amountStr.match(/^([\d.\/½¼¾⅓⅔\-]+)\s*(.*)/);
+  if (!match) return amountStr;
+
+  let numPart = match[1];
+  const unit = match[2];
+
+console.log(numPart); console.log(unit);
+
+  // 2. Convert fractions/ranges
+  const fracs = {'½':0.5,'¼':0.25,'¾':0.75,'⅓':0.333,'⅔':0.667};
+  
+  // Handle simple numbers or single fractions
+  let val = parseFloat(numPart) || fracs[numPart] || null;
+
+  // If it's a range (like "5-6"), just take the average or the first number
+  if (!val && numPart.includes('–')) {
+      val = parseFloat(numPart.split('–')[0]);
+  }
+
+console.log("val:", val, "| unit:", unit);
+
+  // 3. IF NO VALID NUMBER IS FOUND, RETURN ORIGINAL STRING IMMEDIATELY
+  if (val === null || isNaN(val)) return amountStr;
+
+  // 4. Perform math
+  let scaled = (val / base) * current;
+
+console.log("scaled:", scaled, "| unit:", unit);
+
+  // 5. Format nicely
+  let display = Number.isInteger(scaled) ? scaled.toString() : scaled.toFixed(1).replace(/\.0$/, '');
+  
+console.log(display); console.log(unit);  
+  
+  return `${display} ${unit}`.trim();
+}
+
 function renderIngredients() {
   const ul = document.getElementById('mIngredients');
   ul.innerHTML = currentRecipe.ingredients.map(ing => {
     const scaledAmt = ing.amount.match(/^(to taste|as needed|pinch)$/i)
       ? ing.amount
       : scaleAmount(ing.amount, baseServings, currentServings);
+	  
     return `<li><span class="ing-amount">${scaledAmt}</span> ${ing.item}</li>`;
   }).join('');
 }
 
+function getServings(currentRecipe) {
+  // If servings is missing, 0, or not a number, return 1
+  if (!currentRecipe.servings || isNaN(currentRecipe.servings)) {
+    currentRecipe.servings = 1;
+  }
+  return currentRecipe.servings;
+}
+
 function openModal(id) {
   currentRecipe = RECIPES.find(r => r.id === id);
-  baseServings = currentRecipe.servings;
-  currentServings = currentRecipe.servings;
+  
+  // handle when servings value is not provided in the recipe
+  
+  baseServings = getServings(currentRecipe);
+  currentServings = getServings(currentRecipe);
 
   document.getElementById('mCategory').textContent = currentRecipe.category;
   document.getElementById('mTitle').textContent = currentRecipe.title;
