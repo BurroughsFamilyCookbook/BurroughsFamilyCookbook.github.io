@@ -40,8 +40,25 @@
     <div class="site-title">Burroughs<br>Family Cookbook</div>
     <div class="divider">✦ &nbsp; ✦ &nbsp; ✦</div>
     <div class="site-subtitle">Treasured recipes, passed through generations</div>
+
+  <div class="divider">✦ &nbsp; ✦</div>
+  <div class="header-dedication">
+	<a class="site-subtitle" href="assets/BFC-Dedication.pdf" target="_blank" rel="noopener noreferrer">
+	  Dedication
+	</a>
+	<a class="site-subtitle" href="assets/BFC-Recognitions.pdf" target="_blank" rel="noopener noreferrer">
+	  Recognitions
+	</a>
+	<a class="site-subtitle" href="assets/BFC-Spiritual-Quotes.pdf" target="_blank" rel="noopener noreferrer">
+	  Spiritual Quotes
+	</a>	
+  </div>  
+
   </div>
+  
 </header>
+
+
 
 <div class="toolbar">
   <div class="search-wrap">
@@ -50,7 +67,12 @@
   <div class="filter-btns" id="filterBtns">
     <button class="filter-btn active" onclick="setFilter('All', this)">All</button>
     <button class="filter-btn" onclick="setFilter('Main Dish', this)">Main Dish</button>
-    <button class="filter-btn" onclick="setFilter('Side Dish', this)">Side Dish</button>
+	<button class="filter-btn" onclick="setFilter('Side Dish', this)">Side Dish</button>
+	<button class="filter-btn" onclick="setFilter('Salad', this)">Salad</button>
+    <button class="filter-btn" onclick="setFilter('Cookies', this)">Cookies</button>
+	<button class="filter-btn" onclick="setFilter('Cakes & Frostings', this)">Cakes & Frostings</button>
+	<button class="filter-btn" onclick="setFilter('Pies & Desserts', this)">Pies & Desserts</button>
+	<button class="filter-btn" onclick="setFilter('Miscellaneous', this)">Miscellaneous</button>
   </div>
 </div>
 
@@ -117,7 +139,7 @@ function renderCards(list) {
       </div>
       <div class="card-body">
         <div class="card-meta">
-		  <span>🍽 Serves ${r.servings ?? 'Not Provided'}</span>
+		  <span>🍽 Serves ${r.servings ?? 'a few'}</span>
           ${r.temps ? `<span>🌡 ${r.temps}</span>` : ''}
         </div>
         <div class="card-preview">${getPreview(r)}</div>
@@ -144,6 +166,11 @@ function setFilter(cat, btn) {
   filterRecipes();
 }
 
+
+// this is the original method from claude
+// some recipes did not provide a 'serves #' which caused 
+// issues with scaling up or down via the 'serves' button
+// keeping this for now
 function scaleAmountOriginal(amountStr, base, current) {
   // Try to scale numeric amounts
   const match = amountStr.match(/^([\d.\/½¼¾⅓⅔]+)\s*(.*)/);
@@ -160,18 +187,6 @@ function scaleAmountOriginal(amountStr, base, current) {
   if (scaled === Math.floor(scaled)) display = scaled.toString();
   else display = scaled.toFixed(1).replace(/\.0$/, '');
   return `${display} ${unit}`.trim();
-}
-
-function scaleAmountSimple(amount, base, current) {
-  // 1. Try to extract the number from the start of the string
-  const val = parseFloat(amount);
-  
-  // 2. If it's not a number, return the original string immediately
-  if (isNaN(val)) return amount;
-  
-  // 3. Otherwise, do the math and keep the unit (like 'lb') if it exists
-  const scaled = val * (current / base);
-  return amount.replace(val, scaled); 
 }
 
 function scaleAmount(amountStr, base, current) {
