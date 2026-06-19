@@ -42,17 +42,31 @@
     <div class="site-subtitle">Treasured recipes, passed through generations</div>
 
   <div class="divider">✦ &nbsp; ✦</div>
-  <div class="header-dedication">
-	<a class="site-subtitle" href="assets/BFC-Dedication.pdf" target="_blank" rel="noopener noreferrer">
-	  Dedication
-	</a>
-	<a class="site-subtitle" href="assets/BFC-Recognitions.pdf" target="_blank" rel="noopener noreferrer">
-	  Recognitions
-	</a>
-	<a class="site-subtitle" href="assets/BFC-Spiritual-Quotes.pdf" target="_blank" rel="noopener noreferrer">
-	  Spiritual Quotes
-	</a>	
-  </div>  
+  
+  <!-- dedication Recognitions and spiritual quotes -->
+  
+	<div class="header-dedication">
+	  <a href="assets/BFC-Dedication.jpg" class="image-modal-link" onclick="openImageModal(event, 'assets/BFC-Dedication.jpg')">
+		Dedication
+	  </a>
+
+	  <a href="assets/BFC-Recognitions.jpg" class="image-modal-link" onclick="openImageModal(event, 'assets/BFC-Recognitions.jpg')">
+		Recognitions
+	  </a>
+
+	  <a href="assets/BFC-Spiritual-Quotes.jpg" class="image-modal-link" onclick="openImageModal(event, 'assets/BFC-Spiritual-Quotes.jpg')">
+		Spiritual Quotes
+	  </a>	
+
+	  <div id="globalImageModal" class="image-modal-overlay" onclick="closeImageModalOnOverlay(event)">
+		<div class="image-modal-wrapper">
+		  <span class="image-modal-close" onclick="closeImageModal()">&times;</span>
+		  <img class="image-modal-content" id="imageModalTarget" alt="Enlarged visual layout">
+		</div>
+	  </div>  
+	</div>
+
+  <!-- end dedication Recognitions and spiritual quotes -->  
 
   </div>
   
@@ -111,6 +125,8 @@
 <footer>Burroughs Family Cookbook &nbsp;✦&nbsp; Digitized with love</footer>
 
 <script src="js/recipes.js"></script>
+<script src="js/image-open.js"></script>
+
 <script>
 
 let currentFilter = 'All';
