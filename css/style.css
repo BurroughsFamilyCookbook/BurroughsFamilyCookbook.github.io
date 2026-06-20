@@ -541,3 +541,62 @@
     .image-modal-close { top: -2.2rem; right: 5px; }
   }
   
+  /* ==========================================================================
+     Flipbook link
+     ========================================================================== */
+	.flipbook-link {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-family: 'Lora', Georgia, serif; /* Matches header font */
+		color: #a07850; /* Matches your header color scheme */
+		text-decoration: none;
+		font-size: 1.1rem;
+	}
+
+	.flipbook-link:hover {
+		text-decoration: underline;
+	}
+	
+/* ==========================================================================
+   Flipbook Page Layout
+   ========================================================================== */
+
+/* The back-link in the header of the flipbook page */
+.back-link {
+    color: var(--brown-light);
+    text-decoration: none;
+    font-size: 1.1rem;
+    /*border-bottom: 1px solid var(--brown-light); */
+    transition: all 0.2s ease;
+}
+
+
+
+.back-link:hover {
+    /* text-decoration: underline; */
+    color: var(--cream); /* This sets the hover color to cream */
+    border-bottom-color: var(--cream); /* Optional: makes the underline cream too */
+}
+
+/* Container for the flipbook to keep it framed and centered */
+
+
+.flipbook-container {
+    width: 95%;          /* Makes it take up more of the screen width */
+    max-width: 1200px;   /* Increases the maximum size limit */
+    aspect-ratio: 16 / 11; /* Slightly taller for better readability */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background: var(--cream);
+    border: 3px solid var(--brown-mid);
+    border-radius: 2px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.fp-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}	
