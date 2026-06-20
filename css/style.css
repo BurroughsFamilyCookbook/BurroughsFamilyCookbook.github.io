@@ -599,4 +599,37 @@
     height: 100%;
     border: none;
     display: block;
-}	
+}
+
+
+/* ==========================================================================
+   Mobile Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Make the container fill more of the mobile screen */
+    .flipbook-container {
+        width: 98%;           /* Use almost the entire width */
+        margin: 10px auto;    /* Smaller margins for mobile */
+        aspect-ratio: 4 / 5;  /* Taller aspect ratio works better for vertical phones */
+    }
+
+    /* Adjust the back link for smaller screens */
+    .back-link {
+        font-size: 1rem;
+        padding-bottom: 2px;
+    }
+}
+
+/* Make the back link look like a button on mobile for better tap-ability */
+@media (max-width: 768px) {
+    .back-link {
+        display: inline-block;
+        padding: 10px 15px;
+        background: var(--brown-mid);
+        color: var(--cream);
+        border-radius: 4px;
+        border-bottom: none;
+    }
+}
+
+	
