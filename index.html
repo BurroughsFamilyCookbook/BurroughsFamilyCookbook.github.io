@@ -80,14 +80,23 @@
     <input type="text" id="searchInput" placeholder="Search recipes or contributors…" oninput="filterRecipes()">
   </div>
   <div class="filter-btns" id="filterBtns">
-    <button class="filter-btn active" onclick="setFilter('All', this)">All</button>
-    <button class="filter-btn" onclick="setFilter('Main Dish', this)">Main Dish</button>
-	<button class="filter-btn" onclick="setFilter('Side Dish', this)">Side Dish</button>
-	<button class="filter-btn" onclick="setFilter('Salad', this)">Salad</button>
-    <button class="filter-btn" onclick="setFilter('Cookies', this)">Cookies</button>
-	<button class="filter-btn" onclick="setFilter('Cakes & Frostings', this)">Cakes & Frostings</button>
-	<button class="filter-btn" onclick="setFilter('Pies & Desserts', this)">Pies & Desserts</button>
-	<button class="filter-btn" onclick="setFilter('Miscellaneous', this)">Miscellaneous</button>
+  
+	  <div class="btn-row version-row">
+		<button class="filter-btn active" onclick="setVersionFilter('All', this)">All</button>
+		<button class="filter-btn" onclick="setVersionFilter('Volume 1', this)">Volume 1</button>
+		<button class="filter-btn" onclick="setVersionFilter('Volume 2', this)">Volume 2</button>
+  	  </div>
+
+	  <div class="btn-row category-row">
+		<button class="filter-btn active" onclick="setCategoryFilter('All', this)">All</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Main Dish', this)">Main Dish</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Side Dish', this)">Side Dish</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Salad', this)">Salad</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Cookies', this)">Cookies</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Cakes & Frostings', this)">Cakes & Frostings</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Pies & Desserts', this)">Pies & Desserts</button>
+		<button class="filter-btn" onclick="setCategoryFilter('Miscellaneous', this)">Miscellaneous</button>
+	  </div>	
   </div>
 </div>
 
@@ -130,7 +139,8 @@
 
 <script>
 
-let currentFilter = 'All';
+let currentCategory = 'All';
+let currentVersion = 'All';
 let currentRecipe = null;
 let currentServings = 4;
 let baseServings = 4;
@@ -144,7 +154,12 @@ function renderCards(list) {
   document.getElementById('recipeCount').textContent =
     list.length === RECIPES.length ? `${list.length} recipes` : `${list.length} of ${RECIPES.length} recipes`;
   if (list.length === 0) {
-    grid.innerHTML = '<div class="empty-state">No recipes found. Try a different search.</div>';
+    if (currentVersion === 'Volume 2') {
+      grid.innerHTML = '<div class="empty-state">Volume 2 is coming soon! ' +
+        '<a href="volume-2-submit-recipe.html" class="image-modal-link">Learn more</a></div>';
+    } else {
+      grid.innerHTML = '<div class="empty-state">No recipes found. Try a different search.</div>';
+    }
     return;
   }
   grid.innerHTML = list.map((r, i) => `
@@ -168,17 +183,26 @@ function renderCards(list) {
 function filterRecipes() {
   const q = document.getElementById('searchInput').value.toLowerCase();
   let list = RECIPES.filter(r => {
-    const matchCat = currentFilter === 'All' || r.category === currentFilter;
+    const matchCat = currentCategory === 'All' || r.category === currentCategory;
+    const matchVersion = currentVersion === 'All' || r.version === currentVersion;
     const matchQ = !q || r.title.toLowerCase().includes(q) || r.contributor.toLowerCase().includes(q) ||
+	  r.version.toLowerCase().includes(q) ||
       r.ingredients.some(i => i.item.toLowerCase().includes(q));
-    return matchCat && matchQ;
+    return matchCat && matchVersion && matchQ;
   });
   renderCards(list);
 }
 
-function setFilter(cat, btn) {
-  currentFilter = cat;
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+function setCategoryFilter(cat, btn) {
+  currentCategory = cat;
+  btn.closest('.btn-row').querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  filterRecipes();
+}
+
+function setVersionFilter(ver, btn) {
+  currentVersion = ver;
+  btn.closest('.btn-row').querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   filterRecipes();
 }
