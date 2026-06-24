@@ -27,6 +27,7 @@ const RECIPES = [
       "DO NOT BOIL AGAIN as seafood will toughen.",
     ],
     notes: null,
+    version: "Volume 1",	
   },
   {
     id: 2,
@@ -59,6 +60,7 @@ const RECIPES = [
       "Meanwhile, remove skin from chicken and pull meat from bones. Cut into bite sized pieces. Add chicken to beef mixture and heat through. Discard skin and bones.",
     ],
     notes: "SERVES TWELVE.",
+    version: "Volume 1",	
   },
   {
     id: 3,
@@ -83,6 +85,7 @@ const RECIPES = [
       "Simmer for about ½ an hour or until the potatoes are cooked.",
     ],
     notes: null,
+    version: "Volume 1",	
   },
   {
     id: 4,
@@ -104,6 +107,7 @@ const RECIPES = [
       "In a saucepan, heat the grape jelly and chili sauce until melted together. Pour over the meatballs and bake or slow cook.",
     ],
     notes: "THE CHILI SAUCE IS PURCHASED IN YOUR LOCAL GROCERY STORE IN THE SECTION WHERE YOU WOULD BUY KETCHUP.",
+    version: "Volume 1",	
   },
   {
     id: 5,
@@ -134,6 +138,7 @@ const RECIPES = [
       "Add breasts and sauté until golden. Bake.",
     ],
     notes: null,
+	version: "Volume 1",
   },
   {
     id: 6,
@@ -154,6 +159,7 @@ const RECIPES = [
       "To prepare sauce, combine all sauce ingredients EXCEPT cornstarch, and bring to a boil, thickening with cornstarch. Pour over chicken balls and bake.",
     ],
     notes: "Sauce: ½ c sugar, ½ c vinegar, 1 tbsp soya sauce, ½ c pineapple chunks, 1/3 c pineapple juice, ¼ c catsup, sprinkle of pepper, 2 tbsp cornstarch.",
+	version: "Volume 1",
   },
   {
     id: 7,
@@ -177,6 +183,7 @@ const RECIPES = [
       "Bake in shallow 10\" X 15\" pan for one hour or more, basting often.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 8,
@@ -202,6 +209,7 @@ const RECIPES = [
       "Cook ribs slowly until the meat shrinks away from the ends of the bones. Baste regularly during cooking.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 9,
@@ -225,6 +233,7 @@ const RECIPES = [
       "The above makes gravy for mashed potatoes.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 10,
@@ -257,6 +266,7 @@ const RECIPES = [
       "Serve with plain rice.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 11,
@@ -278,6 +288,7 @@ const RECIPES = [
       "Mix bread crumbs and hamburger and add the above mixture. Mix by hand until combined. Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 12,
@@ -310,6 +321,7 @@ const RECIPES = [
       "Serve with rice.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 13,
@@ -330,6 +342,7 @@ const RECIPES = [
       "Pour over fruit in a buttered casserole dish. Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 14,
@@ -357,6 +370,7 @@ const RECIPES = [
       "Pour into partially baked shell and bake. Quiche is baked when metal knife comes out clean.",
     ],
     notes: "VARIATIONS – Use 1 large can of either shrimp, crab or salmon.\n\nThis recipe is excellent for brunch. Serve with a fresh fruit cocktail for an appetizer. Accompany with a spinach and mushroom salad and hot rolls.",
+    version: "Volume 1",
   },
   {
     id: 15,
@@ -397,6 +411,7 @@ const RECIPES = [
       "Once the lasagna is baked LET STAND 15 minutes before serving.",
     ],
     notes: "Checker board style means alternating swiss and mozzarella slices in a grid pattern.",
+    version: "Volume 1",
   },
   {
     id: 16,
@@ -423,6 +438,7 @@ const RECIPES = [
       "In a bowl, combine remaining ingredients EXCEPT almonds, then mix in the soup mixture. If desired, top with almonds and bake in a 2 quart casserole dish (ungreased & uncovered).",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 17,
@@ -445,6 +461,7 @@ const RECIPES = [
       "You can serve this with rice or top with Tea Biscuits the last 10–15 minutes in the oven.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 18,
@@ -463,6 +480,7 @@ const RECIPES = [
       "In a casserole dish mix mushroom soup and cream, add meat and water mixture. Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 19,
@@ -493,6 +511,7 @@ const RECIPES = [
       "Melt 2 tbsp butter and add crushed rice crispies. Spread on top of casserole. Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 20,
@@ -514,6 +533,7 @@ const RECIPES = [
       "Place in casserole dish and bake. ADD the honey the last ½ hour and mix thoroughly.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 21,
@@ -543,6 +563,7 @@ const RECIPES = [
       "Add seafoods and place in large casserole dish. Bake until bubbly and brown (approx. 45 minutes).",
     ],
     notes: "This is good added over baked potatoes.",
+    version: "Volume 1",
   },
   {
     id: 22,
@@ -564,6 +585,7 @@ const RECIPES = [
       "Add remaining ingredients and simmer.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 23,
@@ -580,6 +602,7 @@ const RECIPES = [
       "Turn the oven down and continue baking. You may need to add a little water near the end, but add just a small amount.",
     ],
     notes: "May add potatoes and carrots last hour.",
+    version: "Volume 1",
   },
   {
     id: 24,
@@ -599,6 +622,7 @@ const RECIPES = [
       "If you have a larger chicken or turkey, just increase the times.",
     ],
     notes: "IT IS NOT NECESSARY TO BASTE YOUR CHICKEN OR TURKEY.\n\nWhen preparing your dressing, use MILK instead of water for more taste.",
+    version: "Volume 1",
   },
   {
     id: 25,
@@ -619,6 +643,7 @@ const RECIPES = [
       "Place asparagus in baking dish and sprinkle with cheese mixture. Bake at 350° until cheese is melted, about 5 minutes.",
     ],
     notes: "Serves 4.",
+    version: "Volume 1",
   },
   {
     id: 26,
@@ -639,6 +664,7 @@ const RECIPES = [
       "Mix all ingredients EXCEPT parmesan cheese. Sprinkle the parmesan cheese on top and bake in uncovered casserole.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 27,
@@ -665,6 +691,7 @@ const RECIPES = [
       "Cover with crumbs and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 28,
@@ -689,6 +716,7 @@ const RECIPES = [
       "Pour into buttered casserole dish and sprinkle with 1/3 cup of cracker crumbs. Dot with butter and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 29,
@@ -712,6 +740,7 @@ const RECIPES = [
       "Mix remaining crumbs and melted butter. Sprinkle on top. Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 30,
@@ -736,6 +765,7 @@ const RECIPES = [
       "This salad may be placed in individual molds, if desired.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 31,
@@ -763,6 +793,7 @@ const RECIPES = [
       "Combine dressing ingredients in order, mixing well after each. Pour over salad and toss until evenly coated.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 32,
@@ -788,6 +819,7 @@ const RECIPES = [
       "Chill if time permits for better results.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 33,
@@ -807,6 +839,7 @@ const RECIPES = [
       "Mix and completely chill before serving.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 34,
@@ -830,6 +863,7 @@ const RECIPES = [
       "Add remaining ingredients and toss all together.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 35,
@@ -855,6 +889,7 @@ const RECIPES = [
       "Add remaining ingredients and pour into jello mould.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 36,
@@ -883,6 +918,7 @@ const RECIPES = [
       "This will keep up to a week in the fridge without the lettuce wilting.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 37,
@@ -904,6 +940,7 @@ const RECIPES = [
       "Add all other remaining ingredients and pour into mould.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 38,
@@ -929,6 +966,7 @@ const RECIPES = [
       "Drain off excess dressing before serving.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 39,
@@ -955,6 +993,7 @@ const RECIPES = [
       "Let this refrigerate for at least 3 hours before using.",
     ],
     notes: "THIS WILL KEEP IN THE REFRIGERATOR FOR ONE MONTH!!",
+    version: "Volume 1",
   },
   {
     id: 40,
@@ -983,6 +1022,7 @@ const RECIPES = [
       "Mix all ingredients together in the large bowl and bake. You may need to add more flour to make a stiff cookie dough.",
     ],
     notes: "Yield: 3½ dozen.",
+    version: "Volume 1",
   },
   {
     id: 41,
@@ -1009,6 +1049,7 @@ const RECIPES = [
       "When finished baking, remove from pan immediately.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 42,
@@ -1029,6 +1070,7 @@ const RECIPES = [
       "Spoon onto cookie sheet, shape and store between wax paper in tightly closed container.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 43,
@@ -1050,6 +1092,7 @@ const RECIPES = [
       "Bake till golden brown on ungreased cookie sheet.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 44,
@@ -1073,6 +1116,7 @@ const RECIPES = [
       "Drop on wax paper by teaspoons. Chill until set.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 45,
@@ -1096,6 +1140,7 @@ const RECIPES = [
       "Mix all ingredients together in order and drop on cookie sheet by teaspoons. Bake.",
     ],
     notes: "You may need to use ½ cup or more of flour.",
+    version: "Volume 1",
   },
   {
     id: 46,
@@ -1117,6 +1162,7 @@ const RECIPES = [
       "Beat crisco, margarine, vanilla & icing sugar in a bowl at high speed 5–10 minutes. Add cooled flour mixture, beat 3–5 minutes more.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 47,
@@ -1135,6 +1181,7 @@ const RECIPES = [
       "Immediately frost cake and store in refrigerator.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 48,
@@ -1153,6 +1200,7 @@ const RECIPES = [
       "Combine and boil all ingredients for 1 minute. Let cool slightly and beat until desired consistency.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 49,
@@ -1172,6 +1220,7 @@ const RECIPES = [
       "Combine all ingredients. Pat into 8 X 8 ungreased pan.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 50,
@@ -1216,6 +1265,7 @@ const RECIPES = [
       "You may need to turn the oven down to 250° if the cakes are browning too fast.",
     ],
     notes: "THIS IS A DARK CHRISTMAS CAKE.",
+    version: "Volume 1",
   },
   {
     id: 51,
@@ -1244,6 +1294,7 @@ const RECIPES = [
       "Wax paper line 5 loaf pans, pour in, and bake.",
     ],
     notes: "THIS IS A LIGHT CAKE.",
+    version: "Volume 1",
   },
   {
     id: 52,
@@ -1272,6 +1323,7 @@ const RECIPES = [
       "Icing: Cream together 1 pkg cream cheese, ¼ c butter, 1½ c icing sugar and 1 tsp vanilla. Beat well and spread on cooled cake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 53,
@@ -1297,6 +1349,7 @@ const RECIPES = [
       "Cocoa Butter Icing: Mix together 1/3 c soft butter and 1/3 c cocoa. Blend in 2 c sifted icing sugar, then stir in 1½ tsp vanilla and 2 tbsp milk. Beat until smooth and of spreading consistency.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 54,
@@ -1321,6 +1374,7 @@ const RECIPES = [
       "For easy removal from pan, paper bottom of pan before putting batter in.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 55,
@@ -1347,6 +1401,7 @@ const RECIPES = [
       "Icing: Beat together 1 – 8 oz pkg cream cheese (softened), ¼ c butter, 2 tsp vanilla and 1 box icing sugar. Spread over cake.",
     ],
     notes: "Use ½ icing recipe for oblong pan, full recipe for 2 layer tins.",
+    version: "Volume 1",
   },
   {
     id: 56,
@@ -1375,6 +1430,7 @@ const RECIPES = [
       "Icing: Combine 1 – 8 oz pkg cream cheese (softened), ¼ c melted margarine, 1 tsp vanilla and 1 lb box powdered sugar. Blend well.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 57,
@@ -1401,6 +1457,7 @@ const RECIPES = [
       "Serve with prepared strawberries and whip cream.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 58,
@@ -1427,6 +1484,7 @@ const RECIPES = [
       "Icing: Melt ¼ c margarine in a saucepan, add ½ c brown sugar and stir over low heat for 2 minutes. Add 2 tbsp milk and stir constantly until it comes to a boil. Remove from heat. Add 1¼ c icing sugar and 1 tsp vanilla. Beat until creamy. Pour over cooled cake. Sprinkle on ¼ c chopped walnuts (optional).",
     ],
     notes: "THE ICING IS NOT STIFF LIKE MOST – but it will harden on the cake.",
+    version: "Volume 1",
   },
   {
     id: 59,
@@ -1449,6 +1507,7 @@ const RECIPES = [
       "Bake until knife inserted in middle comes out clean.",
     ],
     notes: "USE ONLY LIBBY'S PUMPKIN FOR BEST RESULTS.",
+    version: "Volume 1",
   },
   {
     id: 60,
@@ -1474,6 +1533,7 @@ const RECIPES = [
       "This can be refrigerated for 2–3 weeks or frozen.",
     ],
     notes: "Yield: 3 double pie crusts.",
+    version: "Volume 1",
   },
   {
     id: 61,
@@ -1496,6 +1556,7 @@ const RECIPES = [
       "Mix ingredients in order given with an electric beater. Pour into deep pastry shell. Bake until knife inserted comes out clean.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 62,
@@ -1518,6 +1579,7 @@ const RECIPES = [
       "Sprinkle soda cracker crumbs on bottom of bowl, then half of the blueberries & half of the whipping cream. REPEAT. (Ingredients should be prepared ahead of time but assemble just before serving.)",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 63,
@@ -1538,6 +1600,7 @@ const RECIPES = [
       "Pour into uncooked pie crust and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 64,
@@ -1561,6 +1624,7 @@ const RECIPES = [
       "Once you have flattened the balls, you can trim around the edge with a small tupperware container so they are perfectly round.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 65,
@@ -1583,6 +1647,7 @@ const RECIPES = [
       "Bake 18–20 minutes, cool and spoon pie filling on each cupcake (other kinds of pie filling may be used). Refrigerate for 1 hour.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 66,
@@ -1606,6 +1671,7 @@ const RECIPES = [
       "Sift dry ingredients, add liquid, oil & raisins. Mix only to blend. Bake.",
     ],
     notes: "I DOUBLE THE RECIPE.",
+    version: "Volume 1",
   },
   {
     id: 67,
@@ -1635,6 +1701,7 @@ const RECIPES = [
       "Pour 1/3 of batter in a pan and sprinkle with ½ the cinnamon mixture. Add another 1/3 of batter then the rest of the cinnamon. Pour the last of the batter on and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 68,
@@ -1661,6 +1728,7 @@ const RECIPES = [
       "Return to oven for additional 5 minutes.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 69,
@@ -1688,6 +1756,7 @@ const RECIPES = [
       "Sprinkle ¼ c walnuts and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 70,
@@ -1716,6 +1785,7 @@ const RECIPES = [
       "Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 71,
@@ -1743,6 +1813,7 @@ const RECIPES = [
       "Put on ungreased baking sheets and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 72,
@@ -1763,6 +1834,7 @@ const RECIPES = [
       "Chill until set. Minimum 6 hours.",
     ],
     notes: "Do Not Use Dream Whip. Also use only plain white after dinner mints.",
+    version: "Volume 1",
   },
   {
     id: 73,
@@ -1793,6 +1865,7 @@ const RECIPES = [
       "To prepare Lemon Sauce, combine sugar, cornstarch and water in double boiler. Cook over heat until thickened. Add lemon juice. Pour over baked fruit when serving.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 74,
@@ -1817,6 +1890,7 @@ const RECIPES = [
       "Repeat layers. Put whipping cream on top and garnish with toasted almond and cherries. Chill overnight.",
     ],
     notes: "Use a deep attractive see-through bowl.",
+    version: "Volume 1",
   },
   {
     id: 75,
@@ -1841,6 +1915,7 @@ const RECIPES = [
       "Refrigerate.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 76,
@@ -1867,6 +1942,7 @@ const RECIPES = [
       "Freeze 6 hours. This will keep in a covered pan 3–4 weeks in freezer.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 77,
@@ -1895,6 +1971,7 @@ const RECIPES = [
       "To prepare topping, mix sugar and cinnamon, stir in apples. Place on top of first layer, sprinkle with almonds and bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 78,
@@ -1921,6 +1998,7 @@ const RECIPES = [
       "Ice when cool, if desired.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 79,
@@ -1949,6 +2027,7 @@ const RECIPES = [
       "Bake until lightly brown. Allow time to cool and cut in squares.",
     ],
     notes: "May be served plain, with whipped cream, or with cherry or vanilla ice cream.",
+    version: "Volume 1",
   },
   {
     id: 80,
@@ -1981,6 +2060,7 @@ const RECIPES = [
       "Melt 4 squares semi sweet chocolate with 1 tbsp butter and spread on custard icing. Cool and cut.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 81,
@@ -2006,6 +2086,7 @@ const RECIPES = [
       "Beat eggs well and add remaining filling ingredients. Pour over partially baked crumb layer and bake 20 minutes. Cool and cut.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 82,
@@ -2035,6 +2116,7 @@ const RECIPES = [
       "To prepare icing, mix icing sugar and cocoa. Blend in the melted margarine and boiling water, beating with an electric beater until creamy and smooth. You may need to add a little more boiling water to make the icing a bit on the runny side. Ice the squares. Refrigerate.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 83,
@@ -2058,6 +2140,7 @@ const RECIPES = [
       "Beat vigorously till fudge becomes thick and starts to lose its gloss. Quickly stir in nuts and spread in buttered pan. Score while warm. Cut when firm.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 84,
@@ -2078,6 +2161,7 @@ const RECIPES = [
       "Boil 10 minutes and pour over popcorn. Stir to coat.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 85,
@@ -2103,6 +2187,7 @@ const RECIPES = [
       "Pour in a thin stream on popcorn, while stirring quickly to coat all popcorn.",
     ],
     notes: "Tastes like Cracker Jack or Poppycock.",
+    version: "Volume 1",
   },
   {
     id: 86,
@@ -2122,6 +2207,7 @@ const RECIPES = [
       "Wrap individually in saran wrap and keep in freezer for the kids on hot days.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 87,
@@ -2146,6 +2232,7 @@ const RECIPES = [
       "Bake 1 hour at 225° on buttered cookie sheet, and be sure to stir mixture every 15 minutes.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 88,
@@ -2172,6 +2259,7 @@ const RECIPES = [
       "Bake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 89,
@@ -2199,6 +2287,7 @@ const RECIPES = [
       "Refrigerate 3–4 hours before serving. Slice 1\" thick and serve.",
     ],
     notes: "This is different and always a hit!",
+    version: "Volume 1",
   },
   {
     id: 90,
@@ -2231,6 +2320,7 @@ const RECIPES = [
       "Place caps on baking sheet and bake 350° for 18–20 minutes.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 91,
@@ -2253,6 +2343,7 @@ const RECIPES = [
       "Remove from fridge about ½ hour before serving and let stand at room temperature.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 92,
@@ -2284,6 +2375,7 @@ const RECIPES = [
       "Put into jars.",
     ],
     notes: "Yield: 24 pints.",
+    version: "Volume 1",
   },
   {
     id: 93,
@@ -2306,6 +2398,7 @@ const RECIPES = [
       "Spoon on as much Picante sauce as desired and Bake until cheese is melted.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 94,
@@ -2332,6 +2425,7 @@ const RECIPES = [
       "Shape into four balls and roll in chopped nuts or garnish with parsley for serving with crackers, etc. Cheeseballs may be frozen and thawed a couple hours before needed.",
     ],
     notes: "Yield: 4 large cheese balls.",
+    version: "Volume 1",
   },
   {
     id: 95,
@@ -2352,6 +2446,7 @@ const RECIPES = [
       "Place the top of the double boiler on the burner and stir constantly. This will keep for a long time.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 96,
@@ -2371,6 +2466,7 @@ const RECIPES = [
       "Cook ham for 1½ hours, drain off fat. Start basting once the fat is drained off. Pour some of the marinade over the ham at 20 minute intervals until all the marinade is used up. During the baking process, baste the ham with the marinade from the bottom of the pan.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 97,
@@ -2395,6 +2491,7 @@ const RECIPES = [
       "Mix brown sugar, cornstarch and seasonings. Add liquids and well crushed garlic. Simmer 10 minutes until thickened, stirring constantly.",
     ],
     notes: "Works well for sauce on country style pork ribs. Brown pork, place in large casserole or roaster, pour sauce over and bake covered in 325° oven approximately 1 hour.",
+    version: "Volume 1",
   },
   {
     id: 98,
@@ -2413,6 +2510,7 @@ const RECIPES = [
       "Combine ingredients and use for dip for fruit or over pound cake.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 99,
@@ -2433,6 +2531,7 @@ const RECIPES = [
       "Roll into tight rolls and put on broiler pan rack. When finished baking, cool and wrap in tin foil and freeze.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 100,
@@ -2455,6 +2554,7 @@ const RECIPES = [
       "Freeze in coffee cans which have been lined with plastic bags. Remove before completely frozen. 2 hours before serving, place in a punch bowl and break up a little. Add mixer.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 101,
@@ -2476,6 +2576,7 @@ const RECIPES = [
       "Combine all ingredients and mix well.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 102,
@@ -2496,6 +2597,7 @@ const RECIPES = [
       "Combine all ingredients and mix well.",
     ],
     notes: null,
+    version: "Volume 1",
   },
   {
     id: 103,
@@ -2522,6 +2624,7 @@ const RECIPES = [
       "Pack into hot sterilized jars, covering vegetables with liquid. Seal.",
     ],
     notes: "Yield: 3 pints.",
+    version: "Volume 1",
   },
   {
     id: 104,
@@ -2544,5 +2647,6 @@ const RECIPES = [
       "Bake at 350° for 30 minutes.",
     ],
     notes: null,
+    version: "Volume 1",	
   },
 ];
