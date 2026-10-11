@@ -5288,5 +5288,78 @@ const RECIPES = [
     "source": "email",
     "sourceDriveFileId": "1Xn9_hxHQ-l5s5ovPXd9_m3fB-n-RhIKf",
     "notes": "Handwritten recipe card with numbers arranged in a way that OCR read out of order. Ingredient list and bake instructions (350°, 2 pie pans, 50-60 min) are legible with reasonable confidence, but exact quantities for the Parmesan cheese and mayonnaise were not legible and are marked 'unknown' rather than guessed. No mixing/assembly step beyond baking was legible on the card. Contributor left as 'unknown' — no sender metadata was attached to the Drive file."
+  },
+  {
+    "id": 122,
+    "version": "Volume 2",
+    "title": "Chinese Spaghetti",
+    "contributor": "unknown",
+    "ingredients": [
+      {
+        "amount": "1 (8-oz.) pkg",
+        "item": "Chinese noodles (Rose's)"
+      },
+      {
+        "amount": "1 1/2 lbs",
+        "item": "ground beef"
+      },
+      {
+        "amount": "1 (15-oz.) can + 1 (8-oz.) can",
+        "item": "tomato sauce"
+      },
+      {
+        "amount": "1 1/2 tsp",
+        "item": "sugar"
+      },
+      {
+        "amount": "1 tsp",
+        "item": "salt"
+      },
+      {
+        "amount": "1/2 tsp",
+        "item": "garlic salt"
+      },
+      {
+        "amount": "1/4 tsp",
+        "item": "pepper"
+      },
+      {
+        "amount": "1/2 c",
+        "item": "sour cream"
+      },
+      {
+        "amount": "1 c",
+        "item": "cottage cheese"
+      },
+      {
+        "amount": "1 (8-oz.) pkg",
+        "item": "cream cheese, softened"
+      },
+      {
+        "amount": "2 tbsp",
+        "item": "dried green pepper"
+      },
+      {
+        "amount": "3",
+        "item": "green onions, chopped"
+      },
+      {
+        "amount": "1/2 c",
+        "item": "Parmesan cheese"
+      }
+    ],
+    "steps": [
+      "Brown ground beef and drain.",
+      "Add tomato sauces, sugar, salts and pepper to the ground beef.",
+      "Cook noodles according to package directions.",
+      "In a medium bowl, combine sour cream, cottage cheese, cream cheese, green pepper and green onions.",
+      "In a 9 x 13-inch pan, layer 1/2 the noodles, 1/2 the meat mixture, all of the cheese mixture, the rest of the noodles and the remaining sauce.",
+      "Sprinkle with Parmesan.",
+      "Cover and bake for 45 minutes in a preheated 375° oven.",
+      "Serve with tossed salad and garlic bread."
+    ],
+    "source": "email",
+    "sourceDriveFileId": "1UN4NoEkWUJGObcBJ16k64h9GEacQCaBj",
+    "notes": "Parsed from a scanned community-cookbook page (p. 50) via OCR. Printed attribution under this recipe reads 'Hollie Meiser, Washington', but contributor left as unknown per ingestion rules (no sender metadata on the Drive file). OCR also produced a stray line 'Chopped pepper' that is not referenced in the steps; omitted. The same page also contains two incomplete recipes that were NOT imported: an untitled baked meatball/rigatoni dish (title cut off at top of page; attributed 'Rachel Moore, California') and 'Spaghetti Pie' (continues on the next page)."
   }
 ];
